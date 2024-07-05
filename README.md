@@ -1,6 +1,8 @@
 # Course-Equestre
-Courses de chevaux sous Angular TypeScript
+Courses de chevaux sous Angular TypeScript.
+<br>
 Ajout de participant pour réaliser une course de chevaux.
+<br>
 Modifiez la distance, l'indice de "flipette" et le nombre de participants pour obtenir une expérience personnalisée. 
 
 Aperçu de la page d'accueil
