@@ -1,0 +1,40 @@
+<div class="containerbouton">
+  <button (click)="runCourse()">Lancer la course</button>
+</div>
+
+@if (race.length > 0) {
+<div class="fullscreen">
+  <div class="hippodrome">
+    <ul>
+      @for (item of race; track $index) {
+      <li class="horse-name">
+        <span>{{ item.name }} : {{ item.getPos() }} mètres</span>
+        <img
+          src="../../../../../assets/images/horse.png"
+          alt="Cheval qui court Image"
+          class="image-cheval"
+          [style.margin-left.px]="item.getPos()"
+          style="margin-right: 10px"
+        />
+        <div class="lines"></div>
+      </li>
+      }
+    </ul>
+  </div>
+</div>
+} @if (podium.length === 3 && haveRunned) {
+<div class="fullscreenpodium">
+  <div class="centered-content">
+    <h1>Dates du jour : {{ today | date : "dd/MM/yyyy" }}</h1>
+    <h3>Le podium du 450 mètres est :</h3>
+    <ol class="podium">
+      @for (item of podium; track $index) {
+      <li>{{ item }}</li>
+      }
+    </ol>
+    <button onclick="window.location.href='./';">
+      Retour à la page principale
+    </button>
+  </div>
+</div>
+}

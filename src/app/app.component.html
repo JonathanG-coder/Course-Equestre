@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="presentation">
+    <h1>Joignez-vous à notre course équestre !</h1>
+  </div>
+  <div class="introduction">
+    <p>
+      Inscrivez votre monture et rivalisez avec d'autres participants pour une
+      compétition palpitante.
+    </p>
+    <p>Les courses de chiens sont en cours de réalisation.</p>
+  </div>
+  <section class="Inscription">
+    <nav>
+      <div class="link-container">
+        <div class="link-item">
+          <a routerLink="/cheval" routerLinkActive="page_active">
+            <img
+              src="../assets/images/equestres.jpg"
+              alt="Un petit garcon sur un poney qui fait une course equestre"
+            />
+            Inscription du cheval
+          </a>
+        </div>
+        <div class="link-item">
+          <div class="photochien">
+            <a routerLink="/chien" routerLinkActive="page_active">
+              <img
+                src="../assets/images/chien.jpg"
+                alt="un petit chien qui cour dans la nature"
+              />
+              Inscription du chien
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+</div>
+
+<router-outlet></router-outlet>

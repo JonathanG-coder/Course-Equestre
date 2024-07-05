@@ -1,0 +1,37 @@
+<div class="fullscreen">
+  <h2>Ajouter un nouveau cheval</h2>
+
+  <form #monForm="ngForm" (ngSubmit)="onSubmit()">
+    <!--onSubmit = on fait le necessaire. => permet de demander required et minlgength =3 par exemple-->
+
+    <label for="nom">Nom:</label>
+    <input
+      type="text"
+      name="nom"
+      placeholder="nom"
+      [(ngModel)]="this.cheval.name"
+      required
+      minlength="3"
+    /><br />
+
+    <label for="robe">Robe:</label>
+    <input
+      type="text"
+      name="robe"
+      placeholder="robe"
+      [(ngModel)]="this.cheval.robe"
+      required
+      minlength="3"
+    /><br />
+
+    <label for="vitesse">Vitesse max:</label>
+    <input
+      type="number"
+      name="vitesse"
+      placeholder="vitesse max"
+      [(ngModel)]="this.cheval.vitesse_max"
+    /><br />
+    <button type="submit" [disabled]="!monForm.valid">Envoyer</button>
+    <button type="button" (click)="goHome()">Retour</button>
+  </form>
+</div>

@@ -1,0 +1,60 @@
+.page_active {
+  font-weight: bold;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.presentation {
+  margin-bottom: 20px;
+}
+
+.introduction {
+  text-align: left;
+  margin-left: -20%;
+}
+
+.section nav {
+  margin-top: 20px;
+}
+
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.link-item {
+  text-align: center;
+  width: 45%;
+}
+
+.link-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.photochien img {
+  transition: filter 0.3s ease;
+}
+
+.photochien img:hover {
+  filter: grayscale(100%);
+}

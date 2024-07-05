@@ -1,0 +1,9 @@
+<form [formGroup]="chienForm" (ngSubmit)="onSubmit()">
+
+  <input type="text" placeholder="nom" formControlName="nom" /><br />
+
+  <p>Completer le formulaire pour pouvoir le soumettre...</p>
+
+  <button type="submit" [disabled]="!chienForm.valid">Envoyer</button>
+  
+</form>

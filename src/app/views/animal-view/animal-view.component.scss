@@ -1,0 +1,118 @@
+.containerbouton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: #6b8e23;
+  color: white;
+  border: 2px solid #4b5320;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin: 20px;
+}
+
+button:hover {
+  background-color: #556b2f;
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(1.05);
+  background-color: #3b5323;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 98%;
+}
+
+.hippodrome {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #805300;
+  background-color: #008000;
+  overflow: auto;
+}
+
+.hippodrome ul {
+  list-style-type: none;
+}
+
+.horse-name {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 20px;
+}
+
+.image-cheval {
+  transform: scaleX(-1);
+  width: 12vh;
+  height: auto;
+}
+
+.hippodrome li {
+  position: relative;
+}
+
+.lines {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 2px;
+  background-color: #805300;
+}
+
+.fullscreenpodium {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #805300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-content {
+  background-color: #008000;
+  width: 80%;
+  height: 80%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.centered-content h1 {
+  font-size: 35px;
+  color: #fff;
+}
+
+.centered-content h3 {
+  font-size: 35px;
+  color: #fff;
+}
+
+.centered-content .podium {
+  padding: 0;
+}
+
+.centered-content .podium li {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
